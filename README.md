@@ -35,4 +35,5 @@ https://user-images.githubusercontent.com/26146888/222951762-2daaa039-e4c8-454b-
 ## Unit 7: Multi-agent and AI-vs-AI
 In this unit we learned about different methodologies to train multi-agent systems, both cooperative and competitive. The main challenge in this unit was to train a football team of two players that would go up against teams trained by others following this course. At the time of writing this my best team has moved up from place 176 to place 40 on the leaderboard, hopefully we can climb a bit further :raised_hands: Below you can see two of my teams playing against each other.
 
-https://user-images.githubusercontent.com/26146888/222951990-abd3e875-f4d0-4929-b46e-84f663d0b857.mp4
+![soccer](https://user-images.githubusercontent.com/26146888/222952066-6eab44c1-12ae-4800-89c1-5b9671db5bc9.gif)
+
