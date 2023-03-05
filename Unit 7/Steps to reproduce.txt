@@ -1,0 +1,37 @@
+Following the course instructions at: https://huggingface.co/deep-rl-course/unit7/hands-on?fw=pt
+
+1. Create and activate an anaconda environment
+
+conda create --name rl python=3.9
+conda activate rl
+
+2. Clone the experimental branch of the ml-agents repository that contains ai-vs-ai functionalities
+
+ git clone --branch aivsai https://github.com/huggingface/ml-agents
+
+3. Install the ml-agents package
+
+cd ml-agents
+pip install -e ./ml-agents-envs
+pip install -e ./ml-agents
+
+4. Install pytorch
+
+pip install torch
+
+5. install the correct version of protobuff
+
+pip install protobuf==3.20.*
+
+6. Install git-lfs  https://git-lfs.com/
+
+7. Download the executable containing the environment and put it in mlagents/training-envs-executables/SoccerTwos
+
+8. Train the model and update the hyperparameters to improve performance (./config/poca/SoccerTwos.yaml)
+
+A copy of my hyperparameters is in the Unit 7 folder of this repository.
+
+Training can be started with: mlagents-learn ./config/poca/SoccerTwos.yaml --env=./training-envs-executables/SoccerTwos.exe --run-id="SoccerTwos" --no-graphics
+
+9. Push the trained agent to the HuggingFace hub
+ 

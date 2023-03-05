@@ -1,0 +1,2 @@
+When v1 and v2 play against eachother, v2 simply destroys v1. When going up against the current best agent on the leaderboard, the games are actually quite close.
+This is crazy, as the model has only trained for about 1/8th of the episodes. So let's train this version for a bit longer and see how far we can get on the leaderboard!

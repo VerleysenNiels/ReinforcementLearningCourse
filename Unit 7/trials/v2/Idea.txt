@@ -1,0 +1,13 @@
+The first version seemed to be doing quite well, but lost terribly versus the first model on the leaderboard (obviously).
+That model has an extremely long training time, but otherwise has the default parameters. With self-play you can of course get better results when training for longer, 
+as your opponent is getting better and better as well.
+
+An idea to push the model to improve faster we could tweak the exploration-exploitation trade-off through the beta and beta-schedule.
+The entropy in the first version dropped very rapidly and then became stable. In the ideal situation, beta drops slowly but steadily.
+I make two changes to accomplish this:
+
+1. Increase initial beta to 0.01
+2. Set the beta scheduler to be linear (decreasing over time)
+
+If this works well, we can let the training go for longer.
+Another idea that can be tried in future versions is to increase the network size.

@@ -1,0 +1,3 @@
+Let's start with the default settings, but make one change:
+
+==> Increase the training time (the compute is available, so why not)
