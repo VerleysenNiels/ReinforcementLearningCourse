@@ -16,3 +16,23 @@ Of course Q-tables don't scale very well when the environment starts to become m
 
 https://user-images.githubusercontent.com/26146888/209936560-ac194564-0868-4c57-8730-216e42714f90.mp4
 
+## Unit 4: Policy gradient with PyTorch
+Q-learning is a value-based method, meaning that the algorithm predicts the value of a given action and the policy just picks the action with the highest predicted value. We can of course also learn the policy directly, the model then gives a probability distribution over the actions. Because of this we don't have to worry about the exploration/exploitation trade-off. An additional benefit is the ability to deal with high dimensional and even continuous action spaces. So in this unit we developed the Monte Carlo Reinforce algorithm from scratch and trained it on some basic environments.
+
+https://user-images.githubusercontent.com/26146888/222951342-3c6d35e5-5b90-4489-bbc8-739af145fdd0.mp4
+
+## Unit 5: Unity ML-agents
+Games like we worked in before can only get complex to a certain point, to go further you need a game-engine (if you don't want to spend a long time developing an environment). In this chapter we therefore looked at how we can train RL agents in the Unity game engine.
+
+![snowballs](https://user-images.githubusercontent.com/26146888/222951496-d2c59893-2125-4191-a855-b85cd97c7849.gif)
+![pyramids](https://user-images.githubusercontent.com/26146888/222951506-97a41dee-880c-41c4-94e3-01da588c0b9c.gif)
+
+## Unit 6: Actor Critic methods in robotics environments
+An issue with Monte Carlo Reinforce and similar algorithms is that there is a lot of variance when computing the gradients, meaning that the training is a lot slower. Actor-Critic methods are hybrids combining an Actor which determines the policy (policy-based method) with a critic that determines how good an action was (value-based method). Through this solution the variance is reduced and the algorithm can therefore move more quickly towards the optimum. We applied the Advantage Actor Critic (A2C) method on some robotics environments in this unit.
+
+https://user-images.githubusercontent.com/26146888/222951762-2daaa039-e4c8-454b-97c1-408c0955ce1d.mp4
+
+## Unit 7: Multi-agent and AI-vs-AI
+In this unit we learned about different methodologies to train multi-agent systems, both cooperative and competitive. The main challenge in this unit was to train a football team of two players that would go up against teams trained by others following this course. At the time of writing this my best team has moved up from place 176 to place 40 on the leaderboard, hopefully we can climb a bit further :raised_hands: Below you can see two of my teams playing against each other.
+
+https://user-images.githubusercontent.com/26146888/222951990-abd3e875-f4d0-4929-b46e-84f663d0b857.mp4
