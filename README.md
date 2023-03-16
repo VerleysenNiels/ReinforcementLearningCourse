@@ -37,3 +37,10 @@ In this unit we learned about different methodologies to train multi-agent syste
 
 ![soccer](https://user-images.githubusercontent.com/26146888/222952066-6eab44c1-12ae-4800-89c1-5b9671db5bc9.gif)
 
+## Unit 8: Proximal Policy Optimization
+This unit exists of two parts, where we dove into the PPO algorithm. One of the core ideas behind PPO is that it is better to be conservative in the policy updates. Smaller policy updates have a larger chance of leading to an optimal policy, while larger updates could fall from a cliff which is hard or impossible to recover from. However, the steps shouldn't be too small either as the training process becomes very slow. PPO therefore uses a Clipped Surrogate Objective function, which clips the updates to the policy. PPO also incorporates the actor-critic approach. We applied PPO to multiple environments, including VizDoom.
+
+https://user-images.githubusercontent.com/26146888/225720676-e8423309-772a-46cd-9eb9-0459ed95df5b.mp4
+
+After unit 8 there was some more bonus content with some theory on advanced topics and pathwas to dive into those. With that, I've come to the end of the course achieving the certificate of excellence for completing every challenge. It's a really interesting and fun course that I can certainly recommend!
+
